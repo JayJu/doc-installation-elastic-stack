@@ -1,8 +1,10 @@
-# Summary
+# Elastic Stack 설치 샘플
 
-* [소개](README.md)
-* [1. 환경구성](chapter1/README.md)
-    * [01\) Elasticsearch](chapter1/01-elasticsearch.md)
-    * [02\) Logstash](chapter1/02-logstash.md)
-    * [03\) Kibana](chapter1/03-kibana.md)
-    * [04\) Beats](chapter1/04-beats.md)
+Metric Beats 를 이용한 Elastic Stack 6.1 구성 샘플 문서입니다.
+
+* 설치환경
+    * Elastic Search + Log Stash + Kibana
+        * RHEL 7.4
+    * Metric Beats
+        * RHEL 6.6
+---
