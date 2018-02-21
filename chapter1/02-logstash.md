@@ -49,4 +49,5 @@
   $ sudo systemctl status logstash
   $ cd /var/log/logstash
   $ tail -100f ./logstash-plain.log
+  $ netstat -anp |grep LISTEN|grep 5044
   ```
