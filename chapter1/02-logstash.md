@@ -12,6 +12,26 @@
   ```
 2. 환경설정
   * Input 으로 beats 를 output 으로 elasticsearch 지정하도록 설정
+  ```
+  $ cd /etc/logstash/conf.d
+  $ sudo vi beats.conf
+  ```
+  * 아래 내용 입력
+  ```
+  input {
+    beats {
+    port => 5044
+    }
+  }
+  output {
+    elasticsearch {
+      hosts => "localhost:9200"
+      manage_template => false
+      index => "%{[@metadata][beat]}-%{[@metadata][version]}-%{+YYYY.MM.dd}"
+      document_type => "%{[@metadata][type]}"
+    }
+  }
+  ```
 3. 방화벽 오픈
   ```
   $ su -
