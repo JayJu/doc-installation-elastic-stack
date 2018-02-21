@@ -1,4 +1,4 @@
-# Elastic Search 설치 및 환경구성
+# Elasticsearch 설치 및 환경구성
 
 * 설치환경
     * RHEL 7.4
@@ -56,7 +56,7 @@
     * 2 /usr/lib/jvm/java-8-oracle/jre/bin/java 1081 manual mode
   ```
 
-6. Elastic Search 다운로드 및 설치
+6. Elasticsearch 다운로드 및 설치
   ```
   $ curl -L -O https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.1.3.rpm
   $ sudo rpm -i elasticsearch-6.1.3.rpm
@@ -67,7 +67,7 @@
   # firewall-cmd --zone=public --permanent --add-port=9200/tcp
   # firewall-cmd --reload
   ```
-8. Elastic Search 서비스 실행/확인
+8. Elasticsearch 서비스 실행/확인
   ```
   $ sudo systemctl start elasticsearch
   $ sudo systemctl status elasticsearch
