@@ -72,5 +72,20 @@
   $ sudo systemctl start elasticsearch
   $ sudo systemctl status elasticsearch
   $ curl http://127.0.0.1:9200
+  {
+  "name" : "J8sWsju",
+  "cluster_name" : "elasticsearch",
+  "cluster_uuid" : "3AZsd6VWRdyIafaxXDT3yw",
+  "version" : {
+    "number" : "6.1.3",
+    "build_hash" : "af51318",
+    "build_date" : "2018-01-26T18:22:55.523Z",
+    "build_snapshot" : false,
+    "lucene_version" : "7.1.0",
+    "minimum_wire_compatibility_version" : "5.6.0",
+    "minimum_index_compatibility_version" : "5.0.0"
+  },
+  "tagline" : "You Know, for Search"
+}
   $ sudo tail -100f /var/log/elasticsearch/elasticsearch.log
   ```
