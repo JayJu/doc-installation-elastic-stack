@@ -32,10 +32,21 @@
     }
   }
   ```
+  * Beats input 플러그인 업데이트
+  ```
+  $ cd /usr/share/logstash
+  $ sudo ./bin/logstash-plugin update logstash-input-beats
+  ```
 3. 방화벽 오픈
   ```
   $ su -
   # firewall-cmd --zone=public --permanent --add-port=5044/tcp
   # firewall-cmd --reload
   ```
-4. Elastic Search 서비스 실행/확인
+4. Logstash 서비스 실행/확인
+  ```
+  $ sudo systemctl start logstash
+  $ sudo systemctl status logstash
+  $ cd /var/log/logstash
+  $ tail -100f ./logstash-plain.log
+  ```
