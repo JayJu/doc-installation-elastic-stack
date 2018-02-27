@@ -8,3 +8,5 @@ Metric Beats 를 이용한 Elastic Stack 6.1 구성 샘플 문서입니다.
     * Metric Beats
         * RHEL 6.6
 ---
+
+![](/chapter1/img/architecture.jpg)
