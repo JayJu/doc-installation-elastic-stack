@@ -60,6 +60,8 @@
   ```
   $ curl -L -O https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.1.3.rpm
   $ sudo rpm -i elasticsearch-6.1.3.rpm
+  $ sudo vi /etc/elasticsearch/elasticsearch.yml
+    network.host: 10.x.x.x
   ```
 #### 7. 방화벽 오픈
   ```
