@@ -20,5 +20,21 @@
   output.logstash:
   hosts: ["10.x.x.x:5044"]
   ```
+  * Module Enable
+  ```
+  $ cd /etc/metricbeat/modules.d
+  $ sudo mv system.yml.disabled system.yml
+  ```
+  * Kibana Dashboard Setup
+  ```
+  sudo metricbeat setup --dashboards
+  ```
+#### 3. Logstash 서비스 실행/확인
+  ```
+  $ sudo service metricbeat start (6.6 이라 systemd 사용불가)
+  $ sudo service metricbeat status
+  $ sudo tail -20f /var/log/metricbeat/metricbeat
+  ```
   
-#### 3. 
+#### 4. Kibana 대시보드 확인
+![](/chapter1/img/kibana-dashboard.jpg)
