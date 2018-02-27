@@ -17,15 +17,21 @@
   http_port = 5000
   root_url = http://localhost:5000
   ```
-  
-#### 3. 서비스 실행/확인
 
-
-#### 4. 방화벽 오픈
+#### 3. 방화벽 오픈
   ```
   $ su -
   # firewall-cmd --zone=public --permanent --add-port=5000/tcp
   # firewall-cmd --reload
   ```
 
-#### 4. Kibana 대시보드 확인
+#### 4. 서비스 실행/확인
+  ```
+  $ systemctl start grafana-server
+  $ systemctl status grafana-server
+  $ sudo tail -20f /var/log/grafana/grafana.log
+  ```
+
+#### 5. Grafana 로그인
+  * http://10.x.x.x:5000 (admin/admin)
+  ![](/chapter1/img/grafana-login.jpg)
