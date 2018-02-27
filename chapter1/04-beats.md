@@ -37,4 +37,4 @@
   ```
   
 #### 4. Kibana 대시보드 확인
-![](/chapter1/img/kibana-dashboard.jpg)
+  ![](/chapter1/img/kibana-dashboard.jpg)
