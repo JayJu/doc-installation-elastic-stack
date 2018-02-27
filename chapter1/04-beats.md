@@ -29,6 +29,7 @@
   ```
   sudo metricbeat setup --dashboards
   ```
+  
 #### 3. Logstash 서비스 실행/확인
   ```
   $ sudo service metricbeat start (6.6 이라 systemd 사용불가)
