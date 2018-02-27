@@ -20,4 +20,5 @@
   output.logstash:
   hosts: ["10.x.x.x:5044"]
   ```
+  
 #### 3. 

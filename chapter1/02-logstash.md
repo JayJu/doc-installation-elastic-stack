@@ -37,6 +37,7 @@
   $ cd /usr/share/logstash
   $ sudo ./bin/logstash-plugin update logstash-input-beats
   ```
+  
 #### 3. 방화벽 오픈
   ```
   $ su -
